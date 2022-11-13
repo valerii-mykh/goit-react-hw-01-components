@@ -1,13 +1,17 @@
-import UserCard from "components/UserCard";
+import UserCard from "./components/UserCard";
 import users from './path/user.json';
+
 export default function App() {
     return (<div>
-        <UserCard
-            username={users.username}
-            tag={users.tag}
-            location={users.location}
-            avatar={users.avatar}
-            stats={users.stats}
-        />
+    {users.map(user => (
+    <UserCard
+    key={user.avatar}
+            username={user.username}
+            tag={user.tag}
+            location={user.location}
+            avatar={user.avatar}
+            stats={user.stats}
+        />))}
+        
     </div>);
 }
