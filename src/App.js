@@ -1,5 +1,5 @@
 import UserCard from "./components/UserCard";
-import users from './path/user.json';
+import users from './user.json';
 
 export default function App() {
     return (<div>
