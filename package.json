@@ -10,6 +10,7 @@
     "babel": "^6.23.0",
     "babel-install": "^2.1.0",
     "eslint": "^8.27.0",
+    "npm-bundle": "^3.0.3",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

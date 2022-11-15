@@ -1,4 +1,4 @@
-export default function UserCard({ username, tag, location, avatar, stats }) {
+export default function User({ username, tag, location, avatar, stats }) {
   return (
     <div class="profile">
       <div class="description">
