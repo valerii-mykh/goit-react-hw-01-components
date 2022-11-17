@@ -30,7 +30,7 @@ const Statistics = ({ title, stats }) => {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.object,
+  //   stats: PropTypes.massive,
 };
 
 export default Statistics;
