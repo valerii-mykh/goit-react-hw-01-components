@@ -1,28 +1,18 @@
 import style from 'components/statistics/Statistics.module.css';
 import PropTypes from 'prop-types';
 
-const Statistics = ({ title, stats }) => {
+const Statistics = ({ items }) => {
   return (
     <section class="statistics">
-      <h2 class="title">Upload stats</h2>
+      <h2 className="title">Upload stats</h2>
 
-      <ul class="stat-list">
-        <li class="item">
-          <span class="label">.docx</span>
-          <span class="percentage">4%</span>
-        </li>
-        <li class="item">
-          <span class="label">.mp3</span>
-          <span class="percentage">14%</span>
-        </li>
-        <li class="item">
-          <span class="label">.pdf</span>
-          <span class="percentage">41%</span>
-        </li>
-        <li class="item">
-          <span class="label">.mp4</span>
-          <span class="percentage">12%</span>
-        </li>
+      <ul className="stat-list">
+        {items.map(item => (
+          <li className="item" key={item.id}>
+            <span className="label">{item.label}</span>
+            <span className="percentage">{item.percentage}</span>
+          </li>
+        ))}
       </ul>
     </section>
   );
