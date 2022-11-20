@@ -1,16 +1,15 @@
 .statistics {
   margin: 0 auto;
-  /* width: 300px; */
-  /* max-width: 100%; */
   background-color: rgb(180, 180, 180);
-  border-radius: 10px;
-  padding-top: 10px;
   text-align: center;
   display: inline-block;
 }
 
 .title {
   font-size: 28px;
+  background-color: #fff;
+  margin: 0;
+  padding: 25px 0;
 }
 
 .stat_list {
@@ -18,10 +17,6 @@
   display: flex;
   padding: 0;
   margin: 0;
-  /* gap: 10px; */
-  /* justify-content: space-around; */
-
-
 }
 
 .item {
@@ -29,8 +24,5 @@
   display: flex;
   padding: 10px;
   flex-direction: column;
+  background-color: limegreen;
 }
-
-.label {}
-
-.percentage {}
