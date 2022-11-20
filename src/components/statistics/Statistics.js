@@ -1,16 +1,16 @@
 import style from 'components/statistics/Statistics.module.css';
 import PropTypes from 'prop-types';
 
-function Statistics({ items }) {
+function Statistics({ stats }) {
   return (
-    <section className="statistics">
-      <h2 className="title">Upload stats</h2>
+    <section className={style.statistics}>
+      <h2 className={style.title}>Upload stats</h2>
 
-      <ul className="stat-list">
-        {items.map(item => (
-          <li className="item" key={item.id}>
-            <span class="label">{item.label}</span>
-            <span class="percentage">{item.percentage}</span>
+      <ul className={style.stat_list}>
+        {stats.map(stat => (
+          <li className={style.item} key={stat.id}>
+            <span className={style.label}> {stat.label} </span>
+            <span className={style.percentage}> {stat.percentage}</span>
           </li>
         ))}
       </ul>
@@ -19,7 +19,7 @@ function Statistics({ items }) {
 }
 
 Statistics.propTypes = {
-  items: PropTypes.arrayOf(
+  stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       label: PropTypes.string,
