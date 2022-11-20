@@ -15,13 +15,11 @@ function Friend({ stats }) {
   );
 }
 Friend.propTypes = {
-  stats: PropTypes.arrayOf(
-    PropTypes.shape({
-      avatar: PropTypes.string,
-      id: PropTypes.number.isRequired,
-      name: PropTypes.string,
-      //   isOnline: PropTypes.bool,
-    })
-  ),
+  stats: PropTypes.shape({
+    avatar: PropTypes.string,
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string,
+    //   isOnline: PropTypes.bool,
+  }),
 };
 export default Friend;
