@@ -4,7 +4,7 @@ import Statistics from './statistics/Statistics';
 import data from '../data/data.json';
 import FriendList from './friend/FriendList';
 import friends from '../data/friends.json';
-import TransactionHistory from './statistics/Statistics';
+import TransactionHistory from './transactions/Transactions';
 import transactions from '../data/transactions.json';
 
 export const App = () => {
